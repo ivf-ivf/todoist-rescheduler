@@ -3,7 +3,7 @@ name: Daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 3,15 * * *'
 
 env:
   TODOIST_API_TOKEN: ${{ secrets.TODOIST_API_TOKEN }}
